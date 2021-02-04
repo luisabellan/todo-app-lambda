@@ -136,7 +136,6 @@ table {
 html,
 body {
   background-color: #bce6ab;
-  height: 100%;
   margin: 0;
 }
 
@@ -186,9 +185,10 @@ body .app-wrapper form input {
   text-align: center;
   font-size: 1.5rem;
   background-color: #b5f5a5;
-  color: #1d8a5d;
+  color: #09130e;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  height: 4rem;
+  border-radius: 1rem;
 }
 
 html .app-wrapper form button,
@@ -201,7 +201,7 @@ body .app-wrapper form button {
           align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
-  height: 5vh;
+  min-height: 8vh;
   width: 100%;
   background-color: rgba(6, 92, 72, 0.863);
   color: #bce6ab;
@@ -218,7 +218,9 @@ body .app-wrapper form button.add-to-do-btn {
           align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  height: 4rem;
+  border-radius: 2rem;
 }
 
 html .app-wrapper form button.add-to-do-btn span,
@@ -232,6 +234,8 @@ body .app-wrapper form button.clear-btn {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  height: 4rem;
+  border-radius: 2rem;
 }
 
 html .app-wrapper form button.clear-btn span,
@@ -293,7 +297,7 @@ body .app-wrapper .item.purchased {
 
 html .app-wrapper footer,
 body .app-wrapper footer {
-  position: fixed;
+  position: static;
   padding: 2rem;
   bottom: 1rem;
 }
