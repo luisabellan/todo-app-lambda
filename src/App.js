@@ -4,24 +4,7 @@ import TodoForm from "./components/TodoComponents/TodoForm"
 import "./App.css"
 
 const todoItems = [
-  {
-    name: "go for a stroll",
-    id: "1",
-    purchased: false
-
-  },
-  {
-    name: "buy bread",
-    id: "2",
-    purchased: false
-
-  },
-  {
-    name: "go home",
-    id: "3",
-    purchased: false
-
-  },
+  
 
 ]
 
