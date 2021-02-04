@@ -2,19 +2,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +92,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,16 +110,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -52,11 +133,15 @@ table {
   border-spacing: 0;
 }
 
-html {
+html,
+body {
   background-color: #bce6ab;
+  height: 100%;
+  margin: 0;
 }
 
-html .app-wrapper {
+html .app-wrapper,
+body .app-wrapper {
   background-color: #bce6ab;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,14 +160,16 @@ html .app-wrapper {
       align-self: center;
 }
 
-html .app-wrapper h2 {
+html .app-wrapper h2,
+body .app-wrapper h2 {
   color: #1d8a5d;
   font-size: 2rem;
   margin: 3rem auto;
   text-align: center;
 }
 
-html .app-wrapper form {
+html .app-wrapper form,
+body .app-wrapper form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +179,8 @@ html .app-wrapper form {
           flex-direction: column;
 }
 
-html .app-wrapper form input {
+html .app-wrapper form input,
+body .app-wrapper form input {
   height: 5vh;
   width: 20rem;
   text-align: center;
@@ -103,7 +191,8 @@ html .app-wrapper form input {
   margin-bottom: 2rem;
 }
 
-html .app-wrapper form button {
+html .app-wrapper form button,
+body .app-wrapper form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +208,8 @@ html .app-wrapper form button {
   font-size: 1.2rem;
 }
 
-html .app-wrapper form button.add-to-do-btn {
+html .app-wrapper form button.add-to-do-btn,
+body .app-wrapper form button.add-to-do-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,22 +221,26 @@ html .app-wrapper form button.add-to-do-btn {
   margin-top: 2rem;
 }
 
-html .app-wrapper form button.add-to-do-btn span {
+html .app-wrapper form button.add-to-do-btn span,
+body .app-wrapper form button.add-to-do-btn span {
   margin: 0 auto;
 }
 
-html .app-wrapper form button.clear-btn {
+html .app-wrapper form button.clear-btn,
+body .app-wrapper form button.clear-btn {
   margin-top: 1rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-html .app-wrapper form button.clear-btn span {
+html .app-wrapper form button.clear-btn span,
+body .app-wrapper form button.clear-btn span {
   margin: 0 auto;
 }
 
-html .app-wrapper .todolist-wrapper {
+html .app-wrapper .todolist-wrapper,
+body .app-wrapper .todolist-wrapper {
   background-color: #1d8a5d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,10 +259,16 @@ html .app-wrapper .todolist-wrapper {
       align-self: center;
   width: 63.5%;
   max-width: 20rem;
+  height: 20rem;
   margin-top: 2rem;
+  overflow-y: auto;
+  scrollbar-color: dark;
+  scroll-behavior: smooth;
+  border-radius: 2rem;
 }
 
-html .app-wrapper .todolist-wrapper p {
+html .app-wrapper .todolist-wrapper p,
+body .app-wrapper .todolist-wrapper p {
   font-size: 1.3rem;
   color: #f8faf8;
   font-weight: 600;
@@ -180,17 +280,26 @@ html .app-wrapper .todolist-wrapper p {
   padding: 0.5rem 2rem;
 }
 
-html .app-wrapper .item {
+html .app-wrapper .item,
+body .app-wrapper .item {
   cursor: pointer;
 }
 
-html .app-wrapper .item.purchased {
+html .app-wrapper .item.purchased,
+body .app-wrapper .item.purchased {
   -webkit-text-decoration: solid line-through red;
           text-decoration: solid line-through red;
 }
 
-html .app-wrapper .copyright {
-  color: rgba(6, 92, 72, 0.863);
+html .app-wrapper footer,
+body .app-wrapper footer {
+  position: fixed;
   padding: 2rem;
+  bottom: 1rem;
+}
+
+html .app-wrapper footer .copyright,
+body .app-wrapper footer .copyright {
+  color: rgba(6, 92, 72, 0.863);
 }
 /*# sourceMappingURL=App.css.map */

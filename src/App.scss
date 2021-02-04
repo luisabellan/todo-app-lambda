@@ -1,55 +1,138 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-html {
+html,
+body {
   background-color: #bce6ab;
+  height: 100%;
+  margin: 0;
   .app-wrapper {
     background-color: #bce6ab;
     display: flex;
@@ -66,20 +149,19 @@ html {
     }
 
     form {
-        display: flex;
-        flex-direction: column;
-        input {
-            height: 5vh;
-            width: 20rem;
-            text-align: center;
-            font-size: 1.5rem;
-            background-color: #b5f5a5;
-            color: rgb(29, 138, 93);
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-
+      display: flex;
+      flex-direction: column;
+      input {
+        height: 5vh;
+        width: 20rem;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: #b5f5a5;
+        color: rgb(29, 138, 93);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       }
-      
+
       button {
         display: flex;
         align-items: center;
@@ -99,7 +181,6 @@ html {
         align-self: center;
         margin-top: 2rem;
 
-
         span {
           margin: 0 auto;
         }
@@ -115,15 +196,20 @@ html {
     }
 
     .todolist-wrapper {
-        background-color: rgb(29, 138, 93);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        width: 63.5%;
-        max-width: 20rem;
-        margin-top: 2rem;
+      background-color: rgb(29, 138, 93);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      width: 63.5%;
+      max-width: 20rem;
+      height: 20rem;
+      margin-top: 2rem;
+      overflow-y: auto;
+      scrollbar-color: dark;
+      scroll-behavior: smooth;
+      border-radius: 2rem;
 
       p {
         font-size: 1.3rem;
@@ -132,7 +218,7 @@ html {
         height: 5vh;
         margin: 0 auto;
         text-align: center;
-        
+
         margin: 0 auto;
         text-align: center;
         padding: 0.5rem 2rem;
@@ -144,13 +230,15 @@ html {
 
     .item.purchased {
       text-decoration: solid line-through red;
-
     }
-    .copyright {
-                color: rgba(6, 92, 72, 0.863);
-                padding: 2rem;
-                
+    footer {
+      position: fixed;
+      padding: 2rem;
+      bottom: 1rem;
 
+      .copyright {
+        color: rgba(6, 92, 72, 0.863);
+      }
     }
   }
 }
