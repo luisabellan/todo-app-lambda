@@ -189,6 +189,7 @@ body .app-wrapper form input {
   margin-top: 2rem;
   height: 4rem;
   border-radius: 1rem;
+  outline: none;
 }
 
 html .app-wrapper form button,

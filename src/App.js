@@ -1,6 +1,8 @@
 import React from 'react';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
+import GoogleFontLoader from 'react-google-font-loader';
+
 import './App.css';
 
 const todoItems = [];
@@ -66,13 +68,26 @@ class App extends React.Component {
         (item) => item.purchased === false
       ),
     });
-
   };
 
   render() {
     return (
       <div className='app-wrapper'>
-        <h2>Todo App</h2>
+        <GoogleFontLoader
+          fonts={[
+            {
+              font: 'Indie Flower',
+              weights: [800, '4000'],
+            },
+            {
+              font: 'Indie Flower',
+              weights: [800, 900],
+            },
+          ]}
+          subsets={['cyrillic-ext', 'greek']}
+        />
+
+        <h2 style={{ fontFamily: 'Indie Flower', fontSize:'5rem' }}>Todo App</h2>
         <TodoForm addItem={this.addItem} clearPurchased={this.clearPurchased} />
         <TodoList
           todoItems={this.state.todoItems}

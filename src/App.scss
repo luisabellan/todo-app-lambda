@@ -157,10 +157,11 @@ body {
         font-size: 1.5rem;
         background-color: #b5f5a5;
         color: rgb(9, 19, 14);
-        margin-top: 2rem;
-   
-         height: 4rem;
+        margin-top: 2rem;   
+        height: 4rem;
         border-radius: 1rem;
+        outline: none
+
       }
 
       button {
@@ -183,7 +184,6 @@ body {
         margin-top: 1rem;
         height: 4rem;
         border-radius: 2rem;
-        
 
         span {
           margin: 0 auto;
