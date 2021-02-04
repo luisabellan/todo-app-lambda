@@ -1,6 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3f6d3295-6600-427d-b083-fc770d2bb4c9/deploy-status)](https://app.netlify.com/sites/todoapp-squarerobin/deploys)
 
 Deployed here: https://todoapp-squarerobin.netlify.com/
+
 # React-Todo
 
 We're going to practice building a stateful class component with this project. Even though hooks are gaining popularity among react developers, class components are going to be around for a long time. It's imperative that you get used to class components, and feel comfortable working with class components since you'll most likely need to work with them if you are hired to work on a React app.
@@ -19,18 +20,18 @@ We're going to practice building a stateful class component with this project. E
   {
     task: 'Organize Garage',
     id: 1528817077286,
-    completed: false
+    purchased: false,
   },
   {
     task: 'Bake Cookies',
     id: 1528817084358,
-    completed: false
-  }
+    purchased: false,
+  },
 ];
 ```
 
 - The `task` field is the todo title that will be shown to the user.
-- The `completed` field should default to `false` and will be the field that we toggle when we complete a todo.
+- The `purchased` field should default to `false` and will be the field that we toggle when we complete a todo.
 - The `id` field is a unique `Time Stamp` that will be assigned by `Date.now()`.
 
 ## Instructions
@@ -65,9 +66,9 @@ Follow these steps for completing your project.
 
 ---
 
-- Add the functionality to toggle your todo's completed flag from `false` to `true`.
-  - Once a todo is completed, be sure to demonstrate to the user that the todo is completed by adding a line-through style property if the completed flag is true.
-- Add the ability to remove any todos that you have completed. `.filter` will be your best friend here. When a user clicks on the `Clear Completed` button call your handler function that will filter out any todos that have the completed flag toggled to `true`.
+- Add the functionality to toggle your todo's purchased flag from `false` to `true`.
+  - Once a todo is purchased, be sure to demonstrate to the user that the todo is purchased by adding a line-through style property if the purchased flag is true.
+- Add the ability to remove any todos that you have purchased. `.filter` will be your best friend here. When a user clicks on the `Clear Completed` button call your handler function that will filter out any todos that have the purchased flag toggled to `true`.
 - **Now is the time to style** Take your time to make this an app that you can be proud of.
 
 ### Task 3: Stretch Problems
@@ -80,6 +81,6 @@ Follow these steps for completing your project.
 
 ## Submission Format
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
 - [ ] From the home page of your repo, make sure you have your branch selected
 - [ ] Copy the URL and paste it into Canvas to submit your assignment

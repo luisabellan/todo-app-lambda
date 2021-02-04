@@ -43,6 +43,10 @@ class TodoForm extends React.Component {
               font: 'Jomhuria',
               weights: [400, 700],
             },
+            {
+              font: 'Ubuntu',
+              weights: [400, 700],
+            },
           ]}
           subsets={['cyrillic-ext', 'greek']}
         />
@@ -53,7 +57,7 @@ class TodoForm extends React.Component {
             placeholder='Add new task here'
             name='todoItem1'
             onChange={this.handleChanges}
-            style={{ fontFamily: 'Anton, sans-serif', outline: 'none' }}
+            style={{ fontFamily: 'Ubuntu, sans-serif', outline: 'none' }}
           ></input>
           <button
             className='add-to-do-btn'
@@ -67,7 +71,7 @@ class TodoForm extends React.Component {
           </button>
           <button
             className='clear-btn'
-            onClick={this.props.clearPurchased}
+            onClick={this.props.clearCompleted}
             style={{
               fontFamily: 'Jomhuria,sans-serif',
               outline: 'none',

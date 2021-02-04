@@ -290,8 +290,8 @@ body .app-wrapper .item {
   cursor: pointer;
 }
 
-html .app-wrapper .item.completed,
-body .app-wrapper .item.completed {
+html .app-wrapper .item .completed,
+body .app-wrapper .item .completed {
   -webkit-text-decoration: solid line-through red;
           text-decoration: solid line-through red;
 }
