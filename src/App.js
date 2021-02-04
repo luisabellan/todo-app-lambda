@@ -37,7 +37,7 @@ class App extends React.Component {
     const newItem = {
       name: item,
       id: Date.now(),
-      purchased: false,
+      completed: false,
     };
 
     this.setState({
@@ -67,8 +67,8 @@ class App extends React.Component {
     e.preventDefault();
     console.log(this.state.todoItems);
     this.setState({
-      // returns the items that haven't been purchased and purges
-      // the ones that have been purchased
+      // returns the items that haven't been completed and purges
+      // the ones that have been completed
       todoItems: this.state.todoItems.filter(
         (item) => item.completed === false
       ),

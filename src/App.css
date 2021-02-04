@@ -301,6 +301,7 @@ body .app-wrapper footer {
   position: static;
   padding: 2rem;
   bottom: 1rem;
+  margin-top: 5rem;
 }
 
 html .app-wrapper footer .copyright,
