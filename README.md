@@ -10,6 +10,6 @@ We're going to practice building a stateful class component with this project. E
 
 ### WIP
 
-- **Data Persintance** in `window.localStorage()` 
+- **Data Persistance** in `window.localStorage()` 
 
 
